@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600;700&family=Nunito:wght@300;400;600;700&family=Oswald:wght@300;400;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html{
+        @apply scroll-smooth;
+    }
+    body{
+        @apply text-whicolor bg-thecolor tracking-wider font-dmsans dark:bg-darkre;
+    }
+
+    section{
+        @apply pt-16 pb-4 md:pt-20;
+    }
+}
+
+@layer components{
+    .btn{
+        @apply inline-block text-sm py-3 px-10 capitalize text-center cursor-pointer rounded-md
+         ease-linear duration-200;
+    }
+
+    .btn-primary{
+        @apply text-blacolor bg-secondcolor hover:opacity-75;
+    }
+}
+
+
+@layer utilities{
+    .home__title,
+    .card__title,
+    .section__title {
+        @apply text-4xl font-oswald font-bold uppercase lg:text-6xl;
+    
+    }
+    .section__title{
+        @apply text-3xl;
+    }
+
+    .card__title{
+        @apply text-xl ;
+
+    }
+
+    .separator{
+        @apply w-28 h-[2px] bg-secondcolor my-5;
+    }
+    .paragraph {
+        @apply text-paracolor text-xs leading-5
+
+    }
+
+}
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active{
+    @apply bg-secondcolor text-blacolor
+}
